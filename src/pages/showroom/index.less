@@ -1,0 +1,149 @@
+.container {
+  display: flex;
+  align-items: center;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-image: url('https://res.miaocode.com/web-3.0/1-1697009373379.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+
+
+.list {
+  :global {
+    .swiper-slide {
+      box-sizing: border-box;
+      padding-top: 70px;
+      width: 352px;
+      height: 472px;
+
+      background-image: url('https://res.miaocode.com/web-3.0/2-1696995599634.png');
+      background-size: 100% 100%;
+      background-repeat: no-repeat;
+
+      transition: width .3s, height .3s, background-image .3s;
+
+      user-select: none;
+    }
+
+    .swiper-slide-active {
+      width: 452px;
+      height: 606px;
+
+      background-image: url('https://res.miaocode.com/web-3.0/1-1697007652383.png');
+    }
+
+    .swiper-wrapper {
+      align-items: center;
+
+      height: 100vh;
+    }
+  }
+}
+
+.poster {
+  position: relative;
+
+  margin: 0 auto 60px;
+  width: 84%;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__adorn {
+    position: absolute;
+    left: -18px;
+    top: -15px;
+
+    width: 110%;
+    height: 118%;
+
+    background-image: url('https://res.miaocode.com/web-3.0/9-1697010413781.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    transition: background-image .3s;
+
+    &--active {
+      background-image: url('https://res.miaocode.com/web-3.0/4-1697011280268.png');
+    }
+  }
+}
+
+.title {
+  margin: 0 auto 20px;
+  width: 80%;
+
+  font-size: 28px;
+  font-weight: bold;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+
+  color: #FFF;
+
+  overflow: hidden;
+}
+
+.controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  z-index: 11;
+
+  width: 100%;
+
+  &__navigation {
+    width: 63px;
+    height: 71px;
+
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+
+    cursor: pointer;
+    user-select: none;
+
+    &--disabled {
+      opacity: 0.35;
+      
+      cursor: auto;
+      pointer-events: none;
+    }
+  }
+
+  &__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0 20px;
+  }
+
+  &__paginationBullet {
+    margin: 0 10px;
+    border-radius: 50%;
+    width: 12px;
+    height: 12px;
+
+    background: #656898;
+
+    cursor: pointer;
+    user-select: none;
+
+    &--active {
+      background: #FFF;
+
+      box-shadow: 0 0 8px 4px rgba(99, 96, 249, .7);
+
+      cursor: auto;
+      pointer-events: none;
+    }
+  }
+}

@@ -4,11 +4,13 @@
  * @LastEditors: wuqinfa
  * @Description: 
  */
-import { defineConfig } from "umi";
+import { defineConfig } from 'umi';
 
 export default defineConfig({
   routes: [
-    { path: "/", component: "index" },
+    { path: '/showroom', component: 'showroom' },
+    
+    { path: '/', redirect: '/showroom',},
   ],
   npmClient: 'pnpm',
 });
