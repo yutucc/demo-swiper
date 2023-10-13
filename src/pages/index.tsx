@@ -1,15 +1,14 @@
-import yayJpg from '../assets/yay.jpg';
+/*
+ * @Author: wuqinfa
+ * @Date: 2023-10-13 17:24:34
+ * @LastEditors: wuqinfa
+ * @Description: 
+ */
 
 export default function HomePage() {
   return (
     <div>
-      <h2>Yay! Welcome to umi!</h2>
-      <p>
-        <img src={yayJpg} width="388" />
-      </p>
-      <p>
-        To get started, edit <code>pages/index.tsx</code> and save to reload.
-      </p>
+      11
     </div>
   );
 }
