@@ -76,7 +76,7 @@ const Showroom = (props: Record<string, any>) => {
   }
 
   return (
-    <div className={styles.container}>
+    <div className={styles.box}>
       <Swiper
         className={styles.list}
         speed={700}
@@ -90,18 +90,7 @@ const Showroom = (props: Record<string, any>) => {
           data.map((item: any, index: number) => {
             return (
               <SwiperSlide key={item}>
-                <div className={styles.poster}>
-                  <img className={styles.poster__img} src="https://res.miaocode.com/web-3.0/Snipaste_2023-10-11_15-44-43-1697010364700.png" alt="" />
-                  <div
-                    className={classnames(styles.poster__adorn, {
-                      [styles['poster__adorn--active']]: activeIndex === index,
-                    })}
-                  />
-                </div>
-
-                <div className={styles.title}>课件名称课件名称课件名课件名称课件名称课件名课件名称课件名称课件名</div>
-
-                <div></div>
+                
               </SwiperSlide>
             );
           })

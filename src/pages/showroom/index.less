@@ -1,4 +1,8 @@
-.container {
+body {
+  margin: 0;
+}
+
+.box {
   display: flex;
   align-items: center;
 
@@ -44,49 +48,6 @@
   }
 }
 
-.poster {
-  position: relative;
-
-  margin: 0 auto 60px;
-  width: 84%;
-
-  &__img {
-    width: 100%;
-  }
-
-  &__adorn {
-    position: absolute;
-    left: -18px;
-    top: -15px;
-
-    width: 110%;
-    height: 118%;
-
-    background-image: url('https://res.miaocode.com/web-3.0/9-1697010413781.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-
-    transition: background-image .3s;
-
-    &--active {
-      background-image: url('https://res.miaocode.com/web-3.0/4-1697011280268.png');
-    }
-  }
-}
-
-.title {
-  margin: 0 auto 20px;
-  width: 80%;
-
-  font-size: 28px;
-  font-weight: bold;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-
-  color: #FFF;
-
-  overflow: hidden;
-}
 
 .controller {
   display: flex;
