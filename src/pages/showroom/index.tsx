@@ -38,7 +38,7 @@ const Showroom = (props: Record<string, any>) => {
           className={classnames(styles.controller__navigation, {
             [styles['controller__navigation--disabled']]: activeIndex === 0,
           })}
-          src="https://res.miaocode.com/web-3.0/2-1697012603580.png"
+          src="http://res.watermcc.top/blog/2023/20231013-1697189987.png"
           alt="prev"
           onClick={() => {
             swiperInstance?.slidePrev();
@@ -65,7 +65,7 @@ const Showroom = (props: Record<string, any>) => {
           className={classnames(styles.controller__navigation, {
             [styles['controller__navigation--disabled']]: activeIndex === (data.length - 1),
           })}
-          src="https://res.miaocode.com/web-3.0/3-1697013755404.png"
+          src="http://res.watermcc.top/blog/2023/20231013-1697189968.png"
           alt="next"
           onClick={() => {
             swiperInstance?.slideNext();
